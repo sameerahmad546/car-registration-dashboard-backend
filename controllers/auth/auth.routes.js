@@ -7,7 +7,7 @@ const apiKey = require('../../middleware/apiKey')
 const router = express.Router()
 
 
-
+//Auth Routes
 router.post('/login', apiKey, authController.login,)
 router.post('/register', apiKey, authController.register)
 

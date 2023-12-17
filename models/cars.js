@@ -24,6 +24,10 @@ const carSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
+		createdBy:{
+			type: mongoose.SchemaTypes.ObjectId,
+			ref: 'users'
+		}
 			
 	},
 )
